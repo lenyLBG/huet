@@ -4,14 +4,20 @@
         private $attribut;
 
         public function __construct(){
-            $this -> attribut = 10;
+
         }
 
-        public function methode(){
-            return $this -> attribut;
+        public function afficherPage($mapage){
+            if ($mapage == 1) $this -> page1();
+            else if ($mapage == 2 ) $this -> page2();
+            else $this -> page1();
         }
-        public function setAttribut($values){
-            if(($values >= 0) && ($values < 10)) $this -> attribut = $values;
+
+        public function page1(){
+            echo "page 1";
+        }
+        public function page2(){
+            echo "page 2";
         }
     }
 
