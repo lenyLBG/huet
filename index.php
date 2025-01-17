@@ -1,3 +1,9 @@
 <?php
-	echo "hello, world!"
+	include 'class.php';
+	$var = new moi();
+	
+	echo $var -> methode();
+
+
+
 ?>
